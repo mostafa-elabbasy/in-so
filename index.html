@@ -1,265 +1,429 @@
-<!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>SmartInn</title>
+  <title>SmartInn</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-   <style>
-      #map {
-        height: 600px;
-        width: 100%;
-       }
-    </style>
+  <script>
 
-  </head>
+    window.onscroll = function () { scrollFunction() };
 
-  <body>
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
-          <i class="fa fa-times"></i>
-        </a>
-        <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#top">SmartInn</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#top">Home</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
-        </li>
-      </ul>
-    </nav>
+    function scrollFunction() {
+      if (document.body.scrollTop < 920) {
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("top1").className += " current";
+      } else if (document.body.scrollTop < 1190 && document.body.scrollTop > 920) {
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("about1").className += " current";
+      } else if (document.body.scrollTop > 1190 && document.body.scrollTop < 1660) {
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("services1").className += " current";
+      } else if (document.body.scrollTop > 1660 && document.body.scrollTop < 3380) {
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("team1").className += " current";
+      }else if (document.body.scrollTop > 3380 && document.body.scrollTop < 4100) {
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("portfolio1").className += " current";
+      }else if (document.body.scrollTop > 4100){
+        var current = document.getElementsByClassName("current");
+        current[0].className += "js-scroll-trigger"
+        document.getElementById("contact1").className += " current";
+      }
 
-    <!-- Header -->
-    <header class="header" id="top">
+    }
+
+  </script>
+
+  <style>
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="header-cover">
+
+      <div id="topnav" class="navbar navbar-fixed-top default">
+        <div class="navbar-inner" style="background: rgba(0,0,0,0.0);border-bottom: black;">
+          <div style="width: 100%;max-width: 85%;background: rgba(0,0,0,0.0)" class="container  nav-style">
+            <div class="logo">
+              <!-- <a href="index.html"><img src="assets/img/logo.PNG" alt="" /></a> -->
+              <a href="index.html">
+                <p
+                  style="color: rgba(251, 176, 59, 1);font-size: 30px;margin: 0px;font-style: oblique;font-family: none;">
+                  SmartInn</p>
+              </a>
+
+            </div>
+            <div class="navigation">
+              <nav>
+                <ul id="topNavNav" class="nav pull-right">
+                  <li><a id="top1" class="js-scroll-trigger current" href="#top">Home</a>
+                  </li>
+                  <li><a class="js-scroll-trigger" id="about1" href="#about">About</a>
+                  </li>
+                  <li><a class="js-scroll-trigger" id="services1" 
+                      href="#services">Services</a></li>
+                  <li><a class="js-scroll-trigger" id="team1" href="#team">Our Team</a>
+                  </li>
+                  <li><a class="js-scroll-trigger" id="portfolio1"
+                      href="#portfolio">Portfolio</a></li>
+                  <li><a class="js-scroll-trigger" id="contact1"
+                      href="#contact">Contact</a></li>
+                  <a id="menu-toggle" style="background-color: inherit;" href="#" class="btn btn-dark btn-lg toggle">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <!-- <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+    <i class="fa fa-bars"></i>
+  </a> -->
+      <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+            <i class="fa fa-times"></i>
+          </a>
+          <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#top">SmartInn</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#top">Home</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#team">Our Team</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close"
+              ).click();>Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header -->
+
       <div class="text-vertical-center">
-        <h1>SmartInn</h1>
-        <h3>Software development company with one clear objective, deliver the best customer service.</h3>
+        <h1 style="color: rgba(251, 176, 59, 1)">SmartInn</h1>
+        <h3 style="color: white">Software development company with one clear objective, deliver the best customer
+          service.</h3>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
+        <a href="#about" style="background-color: rgba(251, 176, 59, 1)"
+          class="btn btn-dark btn-lg js-scroll-trigger">Find Out More</a>
       </div>
-    </header>
-            <hr class="small">
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="container text-center">
-        
-        <p class="lead">SmartInn is a software development company based in Tanta Egypt, that provides high quality IT services such as IT consulting, Web development and Business Applications at effective cost around the world. SmartInn offers you dedicated services at all stages of the project. We strongly believe in increasing our clients business output through the application of the latest technical tools in most effective and creative ways.
-      </div>
-      <!-- /.container -->
-    </section>
-            <hr class="small">
-    <!-- Services -->
-    <section id="services" class="services bg-primary text-white">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-10 mx-auto">
-            <h2>Our Services</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>&nbsp&nbsp&nbspWeb Development</strong>
-                  </h4>
-                  <p>Through open-source software, our web applications are customized for the unique requirements of businesses.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Softwar Development</strong>
-                  </h4>
-                  <p>We focus on the business problem and deliver the solution which not only serves business needs but helps it to grow rapidly.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Mobile App Development</strong>
-                  </h4>
-                  <p>We build high-quality apps across native, web or hybrid platforms. Our apps are aimed at solving your business problems.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                  </span>
-                  <h4>
-                    <strong>Strategic Consulting</strong>
-                  </h4>
-                  <p>We help you with Cloud strategy, Agile methodology, DevOps, and Software Development Practices.</p>
-                </div>
-              </div>
-            </div>
-            <!-- /.row (nested) -->
-          </div>
-          <!-- /.col-lg-10 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-            <hr class="small">
-    <!-- Callout -->
-    <aside id="portfolio">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-             <h2>Who we are </h2>
-            <hr class="small">
-           
-            <div class="row">
-             <div class="col-md-2">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg" style="width:150px;height:150px;">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2>Ali Ali Abdelfatah</h2>
-                <h5>CEO</h5>
-              </div>
-             <div class="col-md-2">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/ah.jpg" style="width:190px;height:150px;">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2>Ahmed Hassan</h2>
-                <h5>Fullstack Developer</h5> 
-              </div>
-           </div>
-           <div class="row">
-             <div class="col-md-2">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/ae.png" style="width:150px;height:150px;">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2>Ahmed ELdeeb</h2>
-                <h5>Fullstack Developer</h5>
-              </div>
-             <div class="col-md-2">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/mg.jpg" style="width:190px;height:150px;">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2>Muhamed Gomaa</h2>
-                <h5>Fullstack Developer</h5> 
-              </div>
-           </div>
-           <div class="row">
-             <div class="col-md-2">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/mi.png" style="width:200px;height:150px;">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <h2>Mikhail Fayez</h2>
-                <h5>Fullstack Developer</h5> 
-              </div>
-           </div>
-          </div>
-         </div>
-        </div>
+    </div>
+  </header>
+  <hr class="small">
+  <!-- About -->
+  <section id="about" style="padding: 70px 0px 0px 0px;" class="about">
+    <div class="container text-center">
 
-    </aside>
-<!--
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h2>Our Work</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-1.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-2.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-3.jpg">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="portfolio-item">
-                  <a href="#">
-                    <img class="img-portfolio img-fluid" src="img/portfolio-4.jpg">
-                  </a>
-                </div>
+      <p class="lead">SmartInn is a software development company based in Tanta Egypt, that provides high quality IT
+        services such as IT consulting, Web development and Business Applications at effective cost around the world.
+        SmartInn offers you dedicated services at all stages of the project. We strongly believe in increasing our
+        clients business output through the application of the latest technical tools in most effective and creative
+        ways.
+    </div>
+    <!-- /.container -->
+  </section>
+  <hr class="small">
+  <!-- Services -->
+  <section id="services" style="padding: 70px 0px 0px 0px;" class="services bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-10 mx-auto">
+          <h2>Our Services</h2>
+          <hr class="small">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                </span>
+                <h4>
+                  <strong>&nbsp&nbsp&nbspWeb Development</strong>
+                </h4>
+                <p>Through open-source software, our web applications are customized for the unique requirements of
+                  businesses.</p>
               </div>
             </div>
-            <a href="#" class="btn btn-dark">View More Items</a>
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                </span>
+                <h4>
+                  <strong>Softwar Development</strong>
+                </h4>
+                <p>We focus on the business problem and deliver the solution which not only serves business needs but
+                  helps it to grow rapidly.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                </span>
+                <h4>
+                  <strong>Mobile App Development</strong>
+                </h4>
+                <p>We build high-quality apps across native, web or hybrid platforms. Our apps are aimed at solving your
+                  business problems.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                </span>
+                <h4>
+                  <strong>Strategic Consulting</strong>
+                </h4>
+                <p>We help you with Cloud strategy, Agile methodology, DevOps, and Software Development Practices.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.row (nested) -->
+        </div>
+        <!-- /.col-lg-10 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- Callout -->
+  <section id="team">
+    <div class="row team" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+      <div class="team-cover" style="margin-right: 0px;margin-left: 0px"">
+        <div class=" row" style="margin-right: 0px;margin-left: 0px">
+        <div style="margin-left: 20%;margin-top: 70px;margin-bottom: 70px;" class="col-md-4">
+          <h1 style="color: rgba(251, 176, 59, 1);font-size: 4.5rem;">Management Team</h1>
+          <h3 style="color: white">Nothing beats coming into work every day to be surrounded with people who enjoy
+            creating and making technology better.</h3>
+        </div>
+        <div class="col-md-3">
+          <img src="img/team_managment_title.png" style="width: 70%;height: 70%;margin-top: 24%;margin-left: 50%;">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div>
+
+      <div class="row" style="padding-right: 0px;margin-right: 0px;width: 100%;">
+        <div class="col-lg-10 mx-auto text-center">
+
+          <div class="row" style="margin-top: 70px">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+              <div class="b-quote">
+                <p class="e-quotes"><i>“</i>A team of knowledgeable engineers is powerful. After all, technology is only
+                  a
+                  tool. It can only achieve its best results if there are thoughtful people behind it. And that’s our
+                  goal: create teams of smart individuals to build great software.<i>”</i></p>
+                <p class=" b-quote-after"></p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/portfolio-1.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h2 class="name-right">Ali Ali Abdelfatah</h2>
+              <h5 class="job-right">CEO</h5>
+            </div>
+
+          </div>
+          <hr>
+          <div class="row" style="padding-top: 15px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-2" style="text-align: right;padding: 0px">
+              <h2 style="padding-top: 30%">Ahmed Hassan</h2>
+              <h5 style="padding-right: 20px;">Fullstack Developer</h5>
+            </div>
+            <div class="col-md-3" style="text-align: left">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/ah.jpg">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-2" style="text-align: right;padding: 0px">
+              <h2 style="padding-top: 30%">Ahmed ELdeeb</h2>
+              <h5 style="padding-right: 20px;">Fullstack Developer</h5>
+            </div>
+
+            <div class="col-md-3" style="text-align: left">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/ae.png">
+                </a>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+
+
+          </div>
+          <hr>
+          <div class="row" style="padding-top: 15px;">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/mg.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h2 class="name-right">Muhamed Gomaa</h2>
+              <h5 class="job-right">Fullstack Developer</h5>
+            </div>
+            <div class="col-md-2">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/mi.png">
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h2 class="name-right">Mikhail Fayez</h2>
+              <h5 class="job-right">Fullstack Developer</h5>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <hr>
+          <div class="row" style="padding-top: 15px;">
+            <div class="col-md-6" style="text-align: right;padding: 0px">
+              <h2 style="padding-top: 10%">Mostafa Elabbasy</h2>
+              <h5 style="padding-right: 35px;">Fullstack Developer</h5>
+            </div>
+            <div class="col-md-6" style="text-align: left">
+              <div class="portfolio-item">
+                <a href="#">
+                  <img class="e-photo" src="img/mos.jpg">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+  </section>
+
+  <section id="portfolio" style="max-height: 696px;" class="portfolio  text-white">
+    <div style="max-height: 676px;" class="portifolio-cover">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 style="margin-bottom: 20px;padding-top: 20px">Our Work</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="portfolio-item">
+                  <a href="img/sky-writer1.png">
+                    <img class="img-portfolio img-fluid" src="img/sky-writer1.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="portfolio-item">
+                  <a href="img/sky-writer2.png">
+                    <img class="img-portfolio img-fluid" src="img/sky-writer2.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="portfolio-item">
+                  <a href="img/sky-writer-3.png">
+                    <img class="img-portfolio img-fluid" src="img/sky-writer-3.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="portfolio-item">
+                  <a href="img/tlabatac1.png">
+                    <img class="img-portfolio img-fluid" src="img/tlabatac1.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="portfolio-item">
+                  <a href="img/tlabatac2.png">
+                    <img class="img-portfolio img-fluid" src="img/tlabatac2.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="portfolio-item">
+                  <a href="img/tlabatac3.png">
+                    <img class="img-portfolio img-fluid" src="img/tlabatac3.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="portfolio-item">
+                  <a href="img/tlabatac4.png">
+                    <img class="img-portfolio img-fluid" src="img/tlabatac4.png">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--
     <aside class="call-to-action bg-primary text-white">
       <div class="container text-center">
         <h3>The buttons below are impossible to resist.</h3>
@@ -268,33 +432,32 @@
       </div>
     </aside>
     -->
-    <!-- Map -->
+  <!-- Map -->
 
-    <hr class="small">
-    <section id="contact">
+  <hr class="small">
+  <section id="contact">
     <div id="map"></div>
-    </section>
-    <script>
-      function initMap() {
-        var tanta = {lat: 30.79401364, lng: 30.99627256};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
-          center: tanta
-        });
-        var marker = new google.maps.Marker({
-          position: tanta,
-          map: map
-        });
-      }
-    </script>
-    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy2oWtX4RkYqb3dZBkAA83kjXBfpdUvJ4&callback=initMap">
-    </script>
+  </section>
+  <script>
+    function initMap() {
+      var tanta = { lat: 30.79401364, lng: 30.99627256 };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 7,
+        center: tanta
+      });
+      var marker = new google.maps.Marker({
+        position: tanta,
+        map: map
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy2oWtX4RkYqb3dZBkAA83kjXBfpdUvJ4&callback=initMap">
+  </script>
 
 
 
 
-<!--
-
+  <!--
     <section id="contact" class="map">
       <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
       <br/>
@@ -303,63 +466,64 @@
       </small>
     </section>
 -->
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h4>
-              <strong>Address</strong>
-            </h4>
-            <p>El Geish Street
-              <br>Tanta, Egypt</p>
-            <ul class="list-unstyled">
-              <li>
-                <i class="fa fa-phone fa-fw"></i>
-                (02) 01098502270 </li>
-              <li>
-                <i class="fa fa-envelope-o fa-fw"></i>
-                <a href="mailto:name@example.com">name@example.com</a>
-              </li>
-            </ul>
-            <br>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter fa-fw fa-3x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-dribbble fa-fw fa-3x"></i>
-                </a>
-              </li>
-            </ul>
-            <hr class="small">
-            <p class="text-muted">©2017 innovative solutions - We build custom software for any device and platform All rights reserved</p>
-          </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <h4>
+            <strong>Address</strong>
+          </h4>
+          <p>El Geish Street
+            <br>Tanta, Egypt</p>
+          <ul class="list-unstyled">
+            <li>
+              <i class="fa fa-phone fa-fw"></i>
+              (02) 01098502270 </li>
+            <li>
+              <i class="fa fa-envelope-o fa-fw"></i>
+              <a href="mailto:name@example.com">name@example.com</a>
+            </li>
+          </ul>
+          <br>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-facebook fa-fw fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-twitter fa-fw fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fa fa-dribbble fa-fw fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+          <hr class="small">
+          <p class="text-muted">©2017 innovative solutions - We build custom software for any device and platform All
+            rights reserved</p>
         </div>
       </div>
-      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
-        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
-      </a>
-    </footer>
+    </div>
+    <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+      <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+    </a>
+  </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.js"></script>
 
-  </body>
+</body>
 
 </html>

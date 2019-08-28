@@ -5,7 +5,67 @@
  */
 
 /* Global Styles */
+.team_text_rigth {
+  text-align: right;
+  padding: 0px
+}
+.menu-toggle {
+  display: none;
+}
+.team_text_rigth_name {
+  padding-top: 30%
+}
+.team_text_rigth_job {
+  padding-right: 20px;
+}
+.team_last_row_name {
+  padding-top: 10%;
+}
+.team_last_row_job {
+  padding-right: 35px;
+}
+.team_header {
+  margin-left: 20%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
+.team_managment_title {
+  width: 70%;
+  height: 70%;
+  margin-top: 24%;
+  margin-left: 50%;
+}
+.menu-dispaly {
+  display: inline;
+}
+.quote-display {
+  display: block;
+}
+.team-managment-title-icon {
+  display: block;
+}
+
+
+@media (min-width: 2000px) {
+	.navbar-inner {
+		width:100%;
+	}
+	#topnav .navbar-inner .container .logo {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+	}
+	.default {
+	position: fixed;
+	background:white;
+	top:0;
+	left: 0;
+	width: 100%;
+	}
+
+}
 
 
 html, body {
@@ -360,4 +420,68 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+.image-align {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: inline;
+  }
+  .menu-dispaly {
+    display: none;
+  }
+  .team_header {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .quote-display {
+    display: none;
+  }
+  .team-managment-title-icon {
+    display: none;
+  }
+  .name-right {
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .job-right{
+    text-align: center;
+    padding-left: 0px;
+  }
+  .team_text_rigth {
+
+    text-align: center;
+    padding: 0px;
+
+}
+.team_text_rigth_name {
+  padding-top: 0px
+}
+.team_text_rigth_job {
+  padding-right: 0px;
+}
+.image-align {
+  text-align: center;
+}
+.e-photo {
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.team_last_row_name {
+  padding-top: 0px;
+}
+.team_last_row_job {
+
+  padding-right: 0px;
+
+}
 }

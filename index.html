@@ -42,11 +42,11 @@
         var current = document.getElementsByClassName("current");
         current[0].className += "js-scroll-trigger"
         document.getElementById("team1").className += " current";
-      } else if (document.body.scrollTop > 3380 && document.body.scrollTop < 4100) {
+      } else if (document.body.scrollTop > 3380 && document.body.scrollTop < 6030) {
         var current = document.getElementsByClassName("current");
         current[0].className += "js-scroll-trigger"
         document.getElementById("portfolio1").className += " current";
-      } else if (document.body.scrollTop > 4100) {
+      } else if (document.body.scrollTop > 6030) {
         var current = document.getElementsByClassName("current");
         current[0].className += "js-scroll-trigger"
         document.getElementById("contact1").className += " current";
@@ -54,11 +54,11 @@
 
     }
 
-    function toggleActive(){
+    function toggleActive() {
       var div = document.getElementById("sidebar-wrapper");
-      if(div.className == ''){
+      if (div.className == '') {
         div.className = "active"
-      }else{
+      } else {
         div.className = ""
       }
     }
@@ -114,7 +114,9 @@
       </div>
 
       <!-- Navigation -->
-      <a id="menu-togg" onclick="toggleActive()" style="position: fixed;z-index: 1;top: 0;right: 0;background-color: rgba(0, 0, 0, .7);color: white;" class="btn btn-dark btn-lg toggle menu-toggle">
+      <a id="menu-togg" onclick="toggleActive()"
+        style="position: fixed;z-index: 1;top: 0;right: 0;background-color: rgba(0, 0, 0, .7);color: white;"
+        class="btn btn-dark btn-lg toggle menu-toggle">
         <i class="fa fa-bars"></i>
       </a>
       <nav id="sidebar-wrapper">
@@ -243,18 +245,18 @@
   <!-- Callout -->
   <section id="team">
     <div class="row team" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
-      <div class="team-cover" style="margin-right: 0px;margin-left: 0px"">
+      <div class="team-cover" style="margin-right: 0px;margin-left: 0px">
         <div class=" row" style="margin-right: 0px;margin-left: 0px">
-        <div class="col-md-4 team_header">
-          <h1 style="color: rgba(251, 176, 59, 1);" class="team-text-size">Management Team</h1>
-          <h3 style="color: white">Nothing beats coming into work every day to be surrounded with people who enjoy
-            creating and making technology better.</h3>
-        </div>
-        <div class="col-md-3 team-managment-title-icon">
-          <img src="img/team_managment_title.png" class="team_managment_title">
+          <div class="col-md-4 team_header">
+            <h1 style="color: rgba(251, 176, 59, 1);" class="team-text-size">Management Team</h1>
+            <h3 style="color: white">Nothing beats coming into work every day to be surrounded with people who enjoy
+              creating and making technology better.</h3>
+          </div>
+          <div class="col-md-3 team-managment-title-icon">
+            <img src="img/team_managment_title.png" class="team_managment_title">
+          </div>
         </div>
       </div>
-    </div>
     </div>
     <div>
 
@@ -365,78 +367,101 @@
 
   </section>
 
-  <section id="portfolio" class="portfolio  text-white">
-    <div style="max-height: 676px;" class="portifolio-cover">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto text-center">
-            <h2 style="margin-bottom: 20px;padding-top: 20px">Our Work</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="portfolio-item">
-                  <a href="img/sky-writer1.png">
-                    <img class="img-portfolio img-fluid" src="img/sky-writer1.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="portfolio-item">
-                  <a href="img/sky-writer2.png">
-                    <img class="img-portfolio img-fluid" src="img/sky-writer2.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="portfolio-item">
-                  <a href="img/sky-writer-3.png">
-                    <img class="img-portfolio img-fluid" src="img/sky-writer-3.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="portfolio-item">
-                  <a href="img/tlabatac1.png">
-                    <img class="img-portfolio img-fluid" src="img/tlabatac1.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="portfolio-item">
-                  <a href="img/tlabatac2.png">
-                    <img class="img-portfolio img-fluid" src="img/tlabatac2.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="portfolio-item">
-                  <a href="img/tlabatac3.png">
-                    <img class="img-portfolio img-fluid" src="img/tlabatac3.png">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="portfolio-item">
-                  <a href="img/tlabatac4.png">
-                    <img class="img-portfolio img-fluid" src="img/tlabatac4.png">
-                  </a>
-                </div>
-              </div>
-
-            </div>
+  <section id="portfolio">
+    <div class="row portfolio" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+      <div class="team-cover" style="margin-right: 0px;margin-left: 0px">
+        <div class=" row" style="margin-right: 0px;margin-left: 0px">
+          <div class="col-md-4 team_header">
+            <h1 style="color: rgba(251, 176, 59, 1);" class="team-text-size">Our work</h1>
+            <h3 style="color: white">Every product we build has a different story. We join our clients’ teams to
+              overcome challenges and help them grow. Together, we make our way towards a common goal: a great product.
+              Read more about our projects in the case studies presented below</h3>
+          </div>
+          <div class="col-md-3 team-managment-title-icon">
+            <img src="img/team_managment_title.png" class="work_managment_title">
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!--
-    <aside class="call-to-action bg-primary text-white">
-      <div class="container text-center">
-        <h3>The buttons below are impossible to resist.</h3>
-        <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-        <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+    <div class="row" style="padding-right: 0px;margin-right: 0px;margin-left: 0px;background-color: #d2d2d2">
+      <div class="works-container">
+
+        <article class="articleShort" data-tabbed-short-article="">
+          <div class="articleShort__image row" data-short-article-image=""
+            style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+            <img src="img/sky-writer-3.png" alt="sky writer" style="width: 100%;max-height: 100%">
+          </div>
+          <div class="articleShort__content row" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+            <header class="articleShort__content__header">
+              <h1 class="articleShort-header">
+                <a data-short-article-header-link="" href="https://www.skywriter.com" class="articleShort-header"
+                  rel="bookmark" title=" Sky-Writer">
+                  Sky-Writer</a>
+              </h1>
+            </header>
+            <hr>
+            <!-- <div class="row"> -->
+            <div class="articleShort__content__info row" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+
+              <div>
+                <h4 style="color: black">Skywriter is incorporating our best practices, a future sprinkle of Artificial
+                  Intelligence / Machine Learning, and a few advanced algorithms into a single cloud-based platform.
+                  With everything in one place, it’s easy to create, curate, broadcast, and track the delivery and
+                  consumption of your content across SMS, email, twitter, and social media.</h4>
+              </div>
+            </div>
+
+            <div class="articleShort__content__more align-justify row" style="text-align: center;margin-top: 20px;">
+               
+                <div class="more" style="text-align: center;width: 100%;">
+                    <a href="https://www.skywriter.com" data-short-article-link="" class="button red hollow">Read More</a>
+                </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="articleShort" data-tabbed-short-article="">
+            <div class="articleShort__image row" data-short-article-image=""
+              style="padding-right: 0px;margin-right: 0px;margin-left: 0px;text-align: center;background-color: rgba(251, 176, 59, 1);">
+              <img src="img/tlabatac1.png" alt="sky writer" style="max-height: 600px;min-height: 600px;max-width: 400px;min-width: 400px;border: 1px solid rgba(251, 176, 59, 1);">
+            </div>
+            <div class="articleShort__content row" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+              <header class="articleShort__content__header">
+                <h1 class="articleShort-header">
+                  <a data-short-article-header-link="" href="https://play.google.com/store/apps/details?id=com.tlabatac.ionic" class="articleShort-header"
+                    rel="bookmark" title=" Tlabatac">
+                    Tlabatac</a>
+                </h1>
+              </header>
+              <hr>
+              <!-- <div class="row"> -->
+              <div class="articleShort__content__info row" style="padding-right: 0px;margin-right: 0px;margin-left: 0px">
+  
+                <div>
+                  <h4 style="color: black">Tlabatac app is for your convenience, we will buy and deliver orders from any location (supermarket, bakery, vegetable markets, spice, restaurants, pharmacies, libraries) or any place or even you want to pay your phone bill - electricity, water or gas.</h4>
+                </div>
+              </div>
+  
+              <div class="articleShort__content__more align-justify row" style="text-align: center;margin-top: 20px;">
+                 
+                  <div class="more" style="text-align: center;width: 100%;">
+                      <a href="https://play.google.com/store/apps/details?id=com.tlabatac.ionic" data-short-article-link="" class="button red hollow">Read More</a>
+                  </div>
+              </div>
+  
+            </div>
+  
+          </article>
+  
+
       </div>
-    </aside>
-    -->
+    </div>
+    <div>
+    </div>
+  </section>
+
   <!-- Map -->
 
   <hr class="small">

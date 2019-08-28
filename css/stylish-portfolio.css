@@ -39,16 +39,13 @@
 .menu-dispaly {
   display: inline;
 }
-
-
-@media (min-width: 400px) and (max-width: 600px) {
-  .menu-toggle {
-    display: inline;
-  }
-  .menu-dispaly {
-    display: none;
-  }
+.quote-display {
+  display: block;
 }
+.team-managment-title-icon {
+  display: block;
+}
+
 
 @media (min-width: 2000px) {
 	.navbar-inner {
@@ -423,4 +420,68 @@ footer {
   bottom: 5px;
   display: none;
   padding: 15px 20px;
+}
+.image-align {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: inline;
+  }
+  .menu-dispaly {
+    display: none;
+  }
+  .team_header {
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .quote-display {
+    display: none;
+  }
+  .team-managment-title-icon {
+    display: none;
+  }
+  .name-right {
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .job-right{
+    text-align: center;
+    padding-left: 0px;
+  }
+  .team_text_rigth {
+
+    text-align: center;
+    padding: 0px;
+
+}
+.team_text_rigth_name {
+  padding-top: 0px
+}
+.team_text_rigth_job {
+  padding-right: 0px;
+}
+.image-align {
+  text-align: center;
+}
+.e-photo {
+  display: inline-block;
+  max-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.team_last_row_name {
+  padding-top: 0px;
+}
+.team_last_row_job {
+
+  padding-right: 0px;
+
+}
 }

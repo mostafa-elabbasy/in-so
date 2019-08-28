@@ -52,12 +52,6 @@ ul.nav li > a.current {
 	.navbar-inner {
 		width:100%;
 	}
-	#topnav .navbar-inner .container .logo {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-	}
 	.default {
 	position: fixed;
 	background:white;
@@ -105,12 +99,6 @@ ul.nav li > a.current {
 	-moz-box-shadow: 0 0 40px #222;
 	}
 
-	#topnav .navbar-inner .container .logo {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-	}
 
   nav select {
     display: block;

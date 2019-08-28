@@ -424,6 +424,10 @@ footer {
 .image-align {
   text-align: left;
 }
+.team-text-size {
+
+  font-size: 4.5rem;
+}
 
 @media (max-width: 600px) {
   .menu-toggle {
@@ -483,5 +487,9 @@ footer {
 
   padding-right: 0px;
 
+}
+.team-text-size {
+
+  font-size: 2.5rem;
 }
 }

@@ -92,7 +92,58 @@
       dots[slideIndex - 1].className += " active";
     }
 
+
+    window.onload = function () {
+
+      console.log("ssssssssssssssssssssss");
+
+      var body = document.getElementById('top');
+      var backgrounds = new Array(
+        'url(../img/new-bg.jpg) no-repeat center center scroll',
+        'url(../img/new-bg-2.jpg) no-repeat center center scroll',
+        'url(../img/new-bg-3.jpg) no-repeat center center scroll'
+      );
+      console.log("rrrrrrrrrrrrrrrrr")
+      var current = 0;
+      function nextBackground() {
+        console.log("mostafa");
+
+        body.style = 'background :' + backgrounds[current = ++current % backgrounds.length]
+
+        setTimeout(nextBackground, 5000);
+      }
+      setTimeout(nextBackground, 5000);
+
+    }
+
   </script>
+
+  <!-- <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    $(function () {
+      console.log("ssssssssssssssssssssss");
+      
+      var body = $('top');
+      var backgrounds = new Array(
+      'url(../img/sky-writer-3.png) no-repeat center center scroll',
+      'url(../img/sky-writer1.png) no-repeat center center scroll',
+      'url(../img/new-bg.jpg) no-repeat center center scroll'
+    );
+    console.log("rrrrrrrrrrrrrrrrr")
+    var current = 0;
+    function nextBackground() {
+      body.css(
+        'background',
+        backgrounds[current = ++current % backgrounds.length]
+      );
+
+      setTimeout(nextBackground, 10000);
+    }
+    console.log("mmmmmmmmmmmmmmmmmmmmmmmm")
+    setTimeout(nextBackground, 10000);
+    body.css('background', backgrounds[0]);
+    });
+    console.log("ttttttttttttttttt")
+  </Script> -->
 
   <style>
     #map {
@@ -104,7 +155,7 @@
 </head>
 
 <body>
-  <header class="header" id="top">
+  <header class="header" id="top" style="background: url(../img/new-bg.jpg) no-repeat center center scroll;">
     <div class="header-cover">
 
       <div id="topnav" class="navbar navbar-fixed-top default menu-dispaly">
